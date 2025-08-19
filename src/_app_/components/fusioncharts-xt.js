@@ -1,1 +1,1 @@
-export { default } from 'ember-fusioncharts/components/fusioncharts-xt';
+export { default } from '../components/fusioncharts-xt';

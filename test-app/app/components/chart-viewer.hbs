@@ -1,0 +1,20 @@
+<div class="chart-test">
+  <h1>{{ this.title }}</h1>
+
+  <FusionchartsXt
+    @width={{this.width}}
+    @height={{this.height}}
+    @type={{this.type}}
+    @dataFormat={{this.dataFormat}}
+    @dataSource={{this.dataSource}}
+    @events={{this.events}}
+  />
+
+  <p>Actual Value: {{ this.actualValue }}</p>
+
+  <div class="controls">
+    <button type="button" {{on "click" this.onClick}}>Change Chart Data</button>
+    <button type="button" {{on "click" this.changeType}}>Change Chart Type</button>
+    <button type="button" {{on "click" this.resizeChart}}>Resize Chart</button>
+  </div>
+</div>

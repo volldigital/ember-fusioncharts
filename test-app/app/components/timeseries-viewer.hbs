@@ -1,0 +1,18 @@
+<div class="timeseries-test">
+  <h1>{{ this.title }}</h1>
+
+  {{#if this.isLoading}}
+    <p>Loading TimeSeries data...</p>
+  {{else if this.dataSource}}
+    <FusionchartsXt
+      @width={{this.width}}
+      @height={{this.height}}
+      @type={{this.type}}
+      @dataFormat={{this.dataFormat}}
+      @dataSource={{this.dataSource}}
+    />
+    <button type="button" {{on "click" this.onClick}}>Update Timeseries Data</button>
+  {{else}}
+    <p>TimeSeries data could not be loaded. Please ensure FusionCharts TimeSeries is available.</p>
+  {{/if}}
+</div>

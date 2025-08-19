@@ -54,8 +54,7 @@
   },
   "peerDependencies": {
     "@glimmer/component": "^1.1.2",
-    "@glimmer/tracking": "^1.1.2",
-    "ember-source": ">= 3.19"
+    "@glimmer/tracking": "^1.1.2"
   },
   "engines": {
     "node": ">= 14.21 || 16.* || >= 18"

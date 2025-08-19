@@ -1,0 +1,53 @@
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 13px;
+  background-color: #fff;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Ember FusionCharts V2 Test App Styles */
+.chart-test,
+.timeseries-test {
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.chart-test h1,
+.timeseries-test h1 {
+  color: #333;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #008ee4;
+  padding-bottom: 10px;
+}
+
+.controls {
+  margin-top: 15px;
+}
+
+.controls button {
+  background-color: #008ee4;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.controls button:hover {
+  background-color: #0074c7;
+}
+
+.controls button:active {
+  background-color: #005a99;
+}
+
+p {
+  margin: 10px 0;
+  color: #666;
+}
