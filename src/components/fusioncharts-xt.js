@@ -1,8 +1,11 @@
 import { action, get, set } from '@ember/object';
-import Component from '@glimmer/component';
+import GlimmerComponent from '@glimmer/component';
 import { tracked } from '@glimmer/tracking';
 import { fusonChartsOptions } from '../utils/options';
 import * as utils from '../utils/utils';
+
+// Handle ES module interop issue
+const Component = GlimmerComponent.default || GlimmerComponent;
 
 export default class FusionChartXt extends Component {
   @tracked chartObj = null;

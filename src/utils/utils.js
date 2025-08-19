@@ -59,7 +59,7 @@ export function cloneDataSource(obj, purpose = 'clone') {
     const arr = [];
     // eslint-disable-next-line no-plusplus
     for (let i = 0; i < obj.length; i++) {
-      arr.push(this.cloneDataSource(obj[i]));
+      arr.push(cloneDataSource(obj[i]));
     }
     return arr;
   }
@@ -77,12 +77,12 @@ export function cloneDataSource(obj, purpose = 'clone') {
         } else if (obj[prop]._dataStore && purpose === 'diff') {
           clonedObj[prop] = '-';
         } else {
-          clonedObj[prop] = this.cloneDataSource(obj[prop]);
+          clonedObj[prop] = cloneDataSource(obj[prop]);
         }
         // eslint-disable-next-line no-continue
         continue;
       }
-      clonedObj[prop] = this.cloneDataSource(obj[prop]);
+      clonedObj[prop] = cloneDataSource(obj[prop]);
     }
     return clonedObj;
   }
